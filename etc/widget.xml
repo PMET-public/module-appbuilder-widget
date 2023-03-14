@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="MagentoEse\AppBuilderWidget\Block\Widget\AppBuilder" id="app_builder_widget">
+        <label>App Builder Widget</label>
+        <description>Embed an App builder App</description>
+        <parameters>
+            <parameter name="jsUrl" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Url To .js file</label>
+            </parameter>
+            <parameter name="cssUrl" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Url to .css file</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

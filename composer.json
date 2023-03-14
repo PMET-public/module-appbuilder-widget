@@ -1,0 +1,17 @@
+{
+    "name": "magentoese/module-appbuilder-widget",
+    "description": "Integrate App Builder Application into Commerce Widget",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+      "MIT"
+    ],
+    "autoload": {
+      "psr-4": {
+        "MagentoEse\\AppBuilderWidget\\": ""
+      },
+      "files": [
+        "registration.php"
+      ]
+    }
+  }

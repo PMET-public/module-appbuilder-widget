@@ -1,0 +1,13 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<?php /** @var \MagentoEse\AppbuilderWidget\Block\Widget\AppBuilder $block */ ?>
+<div
+    data-base-url="<?= $block->escapeUrl($block->getBaseUrl()); ?>"
+    id="root"
+></div>
+<script type="text/javascript" src="<?= $block->escapeUrl($block->getData('jsUrl')) ?>"></script>
+<link rel="stylesheet" type="text/css" href="<?= $block->escapeUrl($block->getData('cssUrl')) ?>"></link>

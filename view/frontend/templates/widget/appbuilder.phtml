@@ -1,13 +1,36 @@
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright © Adobe, Inc. All rights reserved.
+ * See LICENSE for license details.
  */
 ?>
 <?php /** @var \MagentoEse\AppbuilderWidget\Block\Widget\AppBuilder $block */ ?>
+<?php $dataExposed = explode(',', $block->getData('dataExposed'))?>   
 <div
     data-base-url="<?= $block->escapeUrl($block->getBaseUrl()); ?>"
+    <?php if (in_array('productId', $dataExposed)):?>
+        data-product-id="<?= $block->escapeUrl($block->getProductId()); ?>"
+    <?php endif; ?>
+    <?php if (in_array('productSku', $dataExposed)):?>
+        data-product-sku="<?= $block->escapeUrl($block->getProductSku()); ?>"
+    <?php endif; ?>
+    <?php if (in_array('categoryId', $dataExposed)):?>
+        data-category-id="<?= $block->escapeUrl($block->getCategoryId()); ?>"
+    <?php endif; ?>
+    <?php if (in_array('storeId', $dataExposed)):?>    
+        data-store-id="<?= $block->escapeUrl($block->getStoreId()); ?>"
+    <?php endif; ?>
+    <?php if (in_array('storeCode', $dataExposed)):?>       
+        data-store-code="<?= $block->escapeUrl($block->getStoreCode()); ?>"
+    <?php endif; ?>
+    <?php if (in_array('cartId', $dataExposed)):?>   
+        data-cart-id="<?= $block->escapeUrl($block->getCartId()); ?>"
+    <?php endif; ?>
+    <?php if (in_array('customerId', $dataExposed)):?>   
+        data-customer-id="<?= $block->escapeUrl($block->getCustomerId()); ?>"
+    <?php endif; ?>
     id="root"
 ></div>
-<script type="text/javascript" src="<?= $block->escapeUrl($block->getData('jsUrl')) ?>"></script>
+
+<script src="<?= $block->escapeUrl($block->getData('jsUrl')) ?>"></script>
 <link rel="stylesheet" type="text/css" href="<?= $block->escapeUrl($block->getData('cssUrl')) ?>"></link>

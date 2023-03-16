@@ -166,4 +166,18 @@ class AppBuilder extends Template implements BlockInterface
             return $customer->getId();
         }
     }
+
+    /**
+     * Convert widget DataExposed value to array
+     *
+     * @return array
+     */
+    public function getDataExposedArray()
+    {
+        $returnData = [];
+        if($this->getData('dataExposed')){
+            $returnData = explode(',', $this->getData('dataExposed'));
+        }
+        return $returnData;
+    }   
 }

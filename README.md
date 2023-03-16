@@ -3,7 +3,7 @@
 Adds a custom Widget that integrates an Adobe App Builder App into the Commerce frontend. This is meant to cover the most common scenerios, and can be customized to add features as needed. 
 
 #### Usage
-Add like any other widget type either defined under `Content->Widgets` or added in Blocks or Pages. It uses the .css file available from App Builder, but additional css may be needed in the context of the Commerce UI and themes and customizations.
+Add like any other widget type either defined under `Content->Widgets` or added in Blocks or Pages. It uses the .css file available from App Builder, but additional css may be needed in the context of the Commerce UI and themes and customizations. Currently only one widget per page is supported.
 
 #### Widget Options
 

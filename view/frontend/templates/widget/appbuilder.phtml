@@ -5,7 +5,7 @@
  */
 ?>
 <?php /** @var \MagentoEse\AppbuilderWidget\Block\Widget\AppBuilder $block */ ?>
-<?php $dataExposed = explode(',', $block->getData('dataExposed'))?>   
+<?php $dataExposed = $block->getDataExposedArray()?>   
 <div
     data-base-url="<?= $block->escapeUrl($block->getBaseUrl()); ?>"
     <?php if (in_array('productId', $dataExposed)):?>

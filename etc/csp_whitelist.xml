@@ -9,13 +9,13 @@
         <policy id="style-src">
             <values>
                 <value id="adobeio_static_style" type="host">*.adobeio-static.net</value>
-                <value id="adobecom_static_style" type="host">*.adobe.com</value>
+                <value id="adobecom_style" type="host">*.adobe.com</value>
             </values>
         </policy>
         <policy id="script-src">
             <values>
                 <value id="adobeio_static_js" type="host">*.adobeio-static.net</value>
-                <value id="adobecom_static_js" type="host">*.adobe.com</value>
+                <value id="adobecom_js" type="host">*.adobe.com</value>
             </values>
         </policy>
     </policies>
